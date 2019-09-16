@@ -22,7 +22,7 @@ const Navbar = ({ icon, title }) => {
 }
 
 Navbar.defaultProps = {
-    title: 'beta-finder-react',
+    title: 'BETA FINDER:  Start searching for users on github anywhere in the world...',
     icon: 'fab fa-github'
 };
 

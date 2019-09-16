@@ -16,7 +16,7 @@ static propTypes = {
 onSubmit = (e) => {
     e.preventDefault();
     if(this.state.text === '') {
-        this.props.setAlert('please enter something', 'light');
+        this.props.setAlert('Please Enter Something Below To Search', 'light');
     } else {
         this.props.searchUsers(this.state.text);
     this.setState({ text: '' });
@@ -34,13 +34,13 @@ onChange = e => this.setState({ [e.target.name]: e.target.value});
                 <input 
                 type="text" 
                 name="text" 
-                placeholder="Search Users..." 
+                placeholder="Type Here To Search Users..." 
                 value={this.state.text}
                 onChange={this.onChange} 
                 />
                 <input
                    type='submit'
-                   value='Search'
+                   value='Search Here'
                    className='btn btn-dark btn-block'
                   />
                 </form>
@@ -49,7 +49,7 @@ onChange = e => this.setState({ [e.target.name]: e.target.value});
                         className="btn btn-light btn-block" 
                         onClick={clearUsers}
                 >
-                    clear
+                    Clear Screen
                     </button>
                 )}
                 

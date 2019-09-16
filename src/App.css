@@ -217,7 +217,9 @@ img {
 
 .btn-block {
   display: block;
-  width: 100%;
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
 }
 
 .btn-sm {
@@ -324,11 +326,12 @@ input[type='password'],
 input[type='date'],
 select,
 textarea {
-  display: block;
-  width: 100%;
-  padding: 0.4rem;
-  font-size: 1.2rem;
-  border: 1px solid #ccc;
+    display: block;
+    width: 75%;
+    padding: 0.4rem;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    margin: auto
 }
 
 input[type='submit'],
@@ -378,6 +381,47 @@ table th {
 
 /* Mobile Styles */
 @media (max-width: 700px) {
+  .hide-sm {
+    display: none;
+  }
+
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  /* Text Styles */
+  .x-large {
+    font-size: 3rem;
+  }
+
+  .large {
+    font-size: 2rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  /* Navbar */
+  .navbar {
+    display: block;
+    text-align: center;
+  }
+
+  .navbar ul {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+
+/* %%%%%%%%%%%%%%%%%%%
+  MOBILE 375px
+%%%%%%%%%%%%%%%%%%% */
+
+@media (max-width: 320px) {
   .hide-sm {
     display: none;
   }
