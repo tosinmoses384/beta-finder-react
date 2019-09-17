@@ -19,7 +19,7 @@ onSubmit = (e) => {
         this.props.setAlert('Please Enter Something Below To Search', 'light');
     } else {
         this.props.searchUsers(this.state.text);
-    this.setState({ text: '' });
+        // this.setState({ text: '' });
     }  
 };
 
@@ -34,7 +34,7 @@ onChange = e => this.setState({ [e.target.name]: e.target.value});
                 <input 
                 type="text" 
                 name="text" 
-                placeholder="Type Here To Search Users..." 
+                placeholder="Type Here To Search..." 
                 value={this.state.text}
                 onChange={this.onChange} 
                 />
